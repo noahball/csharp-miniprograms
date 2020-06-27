@@ -1,0 +1,7 @@
+C:\Users\noahb\source\repos\ApolloInteractive\ApolloInteractive\bin\Debug\ApolloInteractive.exe.config
+C:\Users\noahb\source\repos\ApolloInteractive\ApolloInteractive\bin\Debug\ApolloInteractive.exe
+C:\Users\noahb\source\repos\ApolloInteractive\ApolloInteractive\bin\Debug\ApolloInteractive.pdb
+C:\Users\noahb\source\repos\ApolloInteractive\ApolloInteractive\obj\Debug\ApolloInteractive.csprojAssemblyReference.cache
+C:\Users\noahb\source\repos\ApolloInteractive\ApolloInteractive\obj\Debug\ApolloInteractive.csproj.CoreCompileInputs.cache
+C:\Users\noahb\source\repos\ApolloInteractive\ApolloInteractive\obj\Debug\ApolloInteractive.exe
+C:\Users\noahb\source\repos\ApolloInteractive\ApolloInteractive\obj\Debug\ApolloInteractive.pdb
