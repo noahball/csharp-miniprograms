@@ -1,0 +1,7 @@
+C:\Users\noahb\source\repos\ApolloMadLibs\ApolloMadLibs\bin\Debug\ApolloMadLibs.exe.config
+C:\Users\noahb\source\repos\ApolloMadLibs\ApolloMadLibs\bin\Debug\ApolloMadLibs.exe
+C:\Users\noahb\source\repos\ApolloMadLibs\ApolloMadLibs\bin\Debug\ApolloMadLibs.pdb
+C:\Users\noahb\source\repos\ApolloMadLibs\ApolloMadLibs\obj\Debug\ApolloMadLibs.csprojAssemblyReference.cache
+C:\Users\noahb\source\repos\ApolloMadLibs\ApolloMadLibs\obj\Debug\ApolloMadLibs.csproj.CoreCompileInputs.cache
+C:\Users\noahb\source\repos\ApolloMadLibs\ApolloMadLibs\obj\Debug\ApolloMadLibs.exe
+C:\Users\noahb\source\repos\ApolloMadLibs\ApolloMadLibs\obj\Debug\ApolloMadLibs.pdb
