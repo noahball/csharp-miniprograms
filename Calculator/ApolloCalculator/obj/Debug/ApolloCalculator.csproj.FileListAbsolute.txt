@@ -1,0 +1,6 @@
+C:\Users\noahb\source\repos\ApolloCalculator\ApolloCalculator\bin\Debug\ApolloCalculator.exe.config
+C:\Users\noahb\source\repos\ApolloCalculator\ApolloCalculator\bin\Debug\ApolloCalculator.exe
+C:\Users\noahb\source\repos\ApolloCalculator\ApolloCalculator\bin\Debug\ApolloCalculator.pdb
+C:\Users\noahb\source\repos\ApolloCalculator\ApolloCalculator\obj\Debug\ApolloCalculator.csproj.CoreCompileInputs.cache
+C:\Users\noahb\source\repos\ApolloCalculator\ApolloCalculator\obj\Debug\ApolloCalculator.exe
+C:\Users\noahb\source\repos\ApolloCalculator\ApolloCalculator\obj\Debug\ApolloCalculator.pdb
