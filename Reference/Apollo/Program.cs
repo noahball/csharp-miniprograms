@@ -62,11 +62,36 @@ namespace Apollo
             Console.WriteLine(Math.Min(3, 67)); // Print out the smaller number/integer
             Console.WriteLine(Math.Round(4.3)); // Rounding numbers
 
-            Console.WriteLine("\n-- USER INPUT --\n");
+            // Console.WriteLine("\n-- USER INPUT --\n");
+            // Console.Write("What's your name? : "); // Write text, do not skip a line so the user's input appears next to this text
+            // string interactiveName = Console.ReadLine(); // Grabs user input and stores it in a variable
+            // Console.Write("How old are you? : ");
+            // string interactiveAge = Console.ReadLine();
+            // Console.WriteLine("Howdy, " + interactiveName + "! You are currently " + interactiveAge + " years old."); // Print variables
 
+            Console.WriteLine("\n-- ARRAYS --\n");
+            int[] luckyNumbers = {4, 8 , 15, 16 , 23, 42}; // Defining an array
+            luckyNumbers[2] = 97; // Changing a value from an array
+            string[] friends = new string[3]; // Create an array, and define the max amount of values it can hold. Be aware that this value includes the value 0. Meaning that if you defined 3 as the max value, you can only define values 0, 1 and 2 later. If you attempted to define value 3, the program would crash.
+            friends[0] = "Dj Stores";
+            friends[1] = "KingNick";
+            friends[2] = "Munchie";
+
+            Console.WriteLine(luckyNumbers[2]); // Print a value from an array
+
+            ExampleMethod("blue", "orange"); // Call a method, and pass parameters.
+            ExampleMethod("red", "banana"); // You can run methods as many times as you want!
 
             Console.WriteLine("\n\nProgram executed successfully.");
             Console.ReadLine(); // Show console lines until enter or a character is pressed. Without this the program will terminate immediately.
         }
+
+        static void ExampleMethod(string colour, string fruit) // Create a method, and accept a parameter
+        {
+            Console.WriteLine("\n-- Methods --\n");
+            Console.WriteLine("This is a method!"); // Printing text, just like in the main method!
+            Console.WriteLine("This method's favourite colour is " + colour + ", and the " + fruit + " is its favourite fruit!"); // Use a paramater passed when calling the method
+        }
+
     }
 }
