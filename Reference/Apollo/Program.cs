@@ -79,8 +79,12 @@ namespace Apollo
 
             Console.WriteLine(luckyNumbers[2]); // Print a value from an array
 
+            Console.WriteLine("\n-- Methods --\n");
+
             ExampleMethod("blue", "orange"); // Call a method, and pass parameters.
             ExampleMethod("red", "banana"); // You can run methods as many times as you want!
+
+            Console.WriteLine(num + " cubed is equal to " + Cube(5) + "!");
 
             Console.WriteLine("\n\nProgram executed successfully.");
             Console.ReadLine(); // Show console lines until enter or a character is pressed. Without this the program will terminate immediately.
@@ -88,9 +92,14 @@ namespace Apollo
 
         static void ExampleMethod(string colour, string fruit) // Create a method, and accept a parameter
         {
-            Console.WriteLine("\n-- Methods --\n");
             Console.WriteLine("This is a method!"); // Printing text, just like in the main method!
             Console.WriteLine("This method's favourite colour is " + colour + ", and the " + fruit + " is its favourite fruit!"); // Use a paramater passed when calling the method
+        }
+
+        static int Cube(int num) // Method accepting parameters and returning an integer
+        {
+            int result = num * num * num; // Creating a new integer called result, which takes the parameter num passed to the method, and cubes it.
+            return result; // The method returns an integer, in this case the pre-defined integer result
         }
 
     }
