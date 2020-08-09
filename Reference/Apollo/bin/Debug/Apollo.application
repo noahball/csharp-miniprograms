@@ -3,11 +3,6 @@
   <assemblyIdentity name="Apollo.application" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <description asmv2:publisher="HP Inc." asmv2:product="Apollo" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true">
-    <subscription>
-      <update>
-        <beforeApplicationStartup />
-      </update>
-    </subscription>
     <deploymentProvider codebase="http://noah-spectre/Apollo/Apollo.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
@@ -21,7 +16,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tYVLhz0l11TPSJ89sJEI39OmBmctZaGJ9Ag/PgGJlL0=</dsig:DigestValue>
+        <dsig:DigestValue>a3LpIuicEVxMTRG+3LMm8Ln013JJ2Af1QgR/1Aj5R74=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

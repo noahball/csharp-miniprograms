@@ -9,6 +9,8 @@ namespace Apollo
 {
     class Program
     {
+        private static int num;
+
         static void Main(string[] args)
         {
             string phrase = "Cool Kids"; // Strings
@@ -70,7 +72,7 @@ namespace Apollo
             // Console.WriteLine("Howdy, " + interactiveName + "! You are currently " + interactiveAge + " years old."); // Print variables
 
             Console.WriteLine("\n-- ARRAYS --\n");
-            int[] luckyNumbers = {4, 8 , 15, 16 , 23, 42}; // Defining an array
+            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 }; // Defining an array
             luckyNumbers[2] = 97; // Changing a value from an array
             string[] friends = new string[3]; // Create an array, and define the max amount of values it can hold. Be aware that this value includes the value 0. Meaning that if you defined 3 as the max value, you can only define values 0, 1 and 2 later. If you attempted to define value 3, the program would crash.
             friends[0] = "Dj Stores";
@@ -83,8 +85,48 @@ namespace Apollo
 
             ExampleMethod("blue", "orange"); // Call a method, and pass parameters.
             ExampleMethod("red", "banana"); // You can run methods as many times as you want!
+            Console.WriteLine(CubeNum(5)); // Run a method, while passing parameters and print the result using a return statement.
 
-            Console.WriteLine(num + " cubed is equal to " + Cube(5) + "!");
+            Console.WriteLine(num + " cubed is equal to " + CubeNum(5) + "!"); // Run a method, while passing parameters and print the result using a return statement in a concatenated string.
+
+            int cubedNumber = CubeNum(3); // You can even store method's return values inside of a variable!
+            Console.WriteLine("3 cubed is " + cubedNumber); // ... and print them!
+
+            Console.WriteLine("\n-- IF/ELSE/ELSE IF --\n");
+            bool friendsMotherListening = true;
+            string compliment = "is very nice";
+            string insult = "looks like she came out of a swamp";
+
+            bool isTall = false;
+
+            if (friendsMotherListening && isTall) // If statements. Runs if the boolean friendsMotherListening AND isTall is true.
+            {
+                Console.WriteLine("Your mother " + compliment); // Runs if both are true
+            } else
+            {
+                Console.WriteLine("Your mother " + insult); // Runs if both are false
+            }
+
+            if (friendsMotherListening || isTall) // If statements. Runs if the boolean friendsMotherListening OR isTall is true. The friends' mother has to be listening or you have to be tall to say a compliment. You can also be both.
+            {
+                Console.WriteLine("Your mother " + compliment); // Runs if one or more is true
+            } else
+            {
+                Console.WriteLine("Your mother " + insult); // Runs if none of them are true
+            }
+
+            if (friendsMotherListening && isTall) // If statements. Runs if the boolean friendsMotherListening OR isTall is true. The friends' mother has to be listening or you have to be tall to say a compliment. You can also be both.
+            {
+                Console.WriteLine("Your mother " + compliment); // Runs if one or more is true
+            } else if (friendsMotherListening && !isTall) { // If friends mother is listening and they are not tall
+                Console.WriteLine("Your friend's mother is listening, but you're not tall... go ahead and compliment them!"); // Yay! :)
+            } else if (!friendsMotherListening && isTall)
+            {
+                Console.WriteLine("Your mother " + insult); // Since there's only one other scenario left, this runs if the friends mother is not listening and you are tall.
+            } else
+            {
+                Console.WriteLine("You shouldn't be seeing this!"); // Runs in any other scenario... which shouldn't happen since there aren't any others in the current state of this code.
+            }
 
             Console.WriteLine("\n\nProgram executed successfully.");
             Console.ReadLine(); // Show console lines until enter or a character is pressed. Without this the program will terminate immediately.
@@ -96,7 +138,7 @@ namespace Apollo
             Console.WriteLine("This method's favourite colour is " + colour + ", and the " + fruit + " is its favourite fruit!"); // Use a paramater passed when calling the method
         }
 
-        static int Cube(int num) // Method accepting parameters and returning an integer
+        static int CubeNum(int num) // Method accepting parameters and returning an integer
         {
             int result = num * num * num; // Creating a new integer called result, which takes the parameter num passed to the method, and cubes it.
             return result; // The method returns an integer, in this case the pre-defined integer result
