@@ -128,6 +128,12 @@ namespace Apollo
                 Console.WriteLine("You shouldn't be seeing this!"); // Runs in any other scenario... which shouldn't happen since there aren't any others in the current state of this code.
             }
 
+            Console.WriteLine("\n-- IF/ELSE/ELSE IF CONTINUED --\n");
+            var max = GetMax(302, 640);
+            var max3 = GetMax3(1, 20, 3);
+            Console.WriteLine(max + " is bigger than the other number.");
+            Console.WriteLine(max3 + " is bigger than the other numbers.");
+
             Console.WriteLine("\n\nProgram executed successfully.");
             Console.ReadLine(); // Show console lines until enter or a character is pressed. Without this the program will terminate immediately.
         }
@@ -144,5 +150,33 @@ namespace Apollo
             return result; // The method returns an integer, in this case the pre-defined integer result
         }
 
+        static int GetMax(int num1, int num2) // Get the bigger number
+        {
+            int result; // Declare int
+            if (num1 > num2) // If num1 is bigger than num2
+            {
+                result = num1; // Set the result to num1, which is the bigger number
+            } else // If num2 is bigger than num1
+            {
+                result = num2; // Set the result to num2, which is the bigger number
+            }
+            return result; // Return the result (bigger number)
+        }
+
+        static int GetMax3(int num1, int num2, int num3) // Get the bigger number
+        {
+            int result; // Declare int
+            if (num1 >= num2 && num1 >= num3) // If num1 is bigger or equal to num2 and num1 is bigger or equal to num3
+            {
+                result = num1; // Set the result to num1, which is the bigger number
+            } else if (num2 >= num1 && num2 >= num3)
+            {
+                result = num2; // Set the result to num2, which is the bigger number
+            } else // If num3 is bigger than other numbers
+            {
+                result = num3; // Set the result to num2, which is the bigger number
+            }
+            return result; // Return the result (bigger number)
+        }
     }
 }
